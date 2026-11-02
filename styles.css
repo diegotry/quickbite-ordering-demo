@@ -9,6 +9,10 @@ body {
   min-height: 100vh;
   margin: 0;
   place-items: center;
+  align-content: center;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  box-sizing: border-box;
 }
 
 .card {
@@ -70,4 +74,54 @@ button:focus-visible {
   margin-bottom: 0;
   color: #17663a;
   font-weight: 700;
+}
+
+.report h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.report-button {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem 1.2rem;
+  background: #172033;
+  font-size: 1.1rem;
+}
+
+.report-button:hover {
+  background: #2a3550;
+}
+
+.report-button:disabled {
+  background: #8a93a6;
+  cursor: default;
+}
+
+.report-status {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.report-status a {
+  color: #5b46d8;
+  font-weight: 700;
+}
+
+.report-status ol {
+  margin: 0.75rem 0 0;
+  padding-left: 1.25rem;
+  color: #596579;
+}
+
+.report-error {
+  color: #b42318;
+  font-weight: 700;
+}
+
+@media (max-width: 40rem) {
+  .card {
+    box-sizing: border-box;
+    padding: 1.75rem;
+  }
 }

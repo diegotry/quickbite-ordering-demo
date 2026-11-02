@@ -17,6 +17,18 @@
       </div>
       <p id="confirmation" class="confirmation" role="status" aria-live="polite"></p>
     </main>
+    <section class="card report" aria-labelledby="report-title">
+      <h2 id="report-title">Button not working?</h2>
+      <p class="description">
+        Report it. An AI agent finds the fix, and Diego approves it. No login
+        needed.
+      </p>
+      <button id="report-bug" class="report-button" type="button">
+        Report this bug
+      </button>
+      <div id="report-status" class="report-status" role="status" aria-live="polite"></div>
+    </section>
     <script type="module" src="./src/app.js"></script>
+    <script type="module" src="./src/report.js"></script>
   </body>
 </html>
